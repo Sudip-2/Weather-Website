@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    height: 100svh;
+    align-items: center;
+}
+
+.container{
+    max-width: 350px;
+    min-width: 300px;
+    height: 450px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+    border-radius: 15px;
+    background-color: rgb(236, 236, 236);
+    transition:box-shadow 700ms ease-in-out;
+}
+
+.container.container:hover{
+    box-shadow: 1px 1px grey;
+}
+
+.searchBox{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.searchBox input{
+    height: 35px;
+    padding: 0px 15px;
+    border-radius:25px ;
+    border: 1px grey solid;
+    width: 210px;
+}
+
+#search-icon{
+    height: 35px;
+    width: 35px;
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.middle-part{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#weather-logo {
+    height: 100px;
+}
+
+#weatherDesc{
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+
+#temp{
+    font-size: 2.5rem;
+}
+
+#cityName{
+    font-size: 1.3rem;
+}
+
+.last-part{
+    display: flex;
+}
+
+.last-part img{
+    height: 40px;
+}
+
+#wind{
+    margin-left: 20px;
+    margin-right: 4px;
+}
